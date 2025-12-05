@@ -21,7 +21,7 @@
 </head>
 
 <body class="">
-    <nav class="bg-white h-[100px] w-full flex justify-between items-center px-7">
+    <nav class="bg-white md:h-[100px] w-full flex flex-col md:justify-between gap-2.5 items-center p-5 mb-5  md:px-7">
         <div class=" w-[195px] flex items-center  gap-3">
             <img src="assets/logo.png" class="h-[50px] w-[50px]" alt="Logo">
             <h1 class="text-lg font-bold text-green-800">Emergency Service</h1>
@@ -44,7 +44,7 @@
     </nav>
     <!-- banner -->
     <section
-        class=" flex flex-col justify-center items-center bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] h-60">
+        class=" flex flex-col justify-center items-center bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] md:h-60 w-full  px-2.5 py-5 text-center">
         <img src="assets/logo-dark.png" class="w-[90px] h-[90px]" alt="Banner Logo">
         <h2 class="text-white font-bold text-[40px]">Emergency Service Directory</h2>
         <h3 class="text-white font-semibold text-[20px]">Government Emergency Services at Your Fingertip - A Project by
@@ -52,8 +52,9 @@
     </section>
 
     <!-- service card and history section  -->
-    <main class="grid grid-cols-4 gap-5 w-full h-[1000px] px-[30px] py-14 bg-[#41ff6a31]">
-        <section class="card-container grid grid-cols-3 grid-rows-3 gap-3.5 row-span-3 col-span-3 ">
+    <main class="flex flex-col
+    md:grid grid-cols-4 gap-5 w-full md:h-[1000px] p-5 md:px-[30px] md:py-14 bg-[#41ff6a31]">
+        <section class="card-container flex flex-col  md:grid md:grid-cols-3 md:grid-rows-3 gap-3.5 row-span-3 col-span-3 ">
             <div class="card bg-white p-5 rounded-2xl space-y-2.5 shadow-lg">
                 <div class="flex justify-between items-center">
                     <img src="assets/emergency.png" alt="" class="card-logo">
@@ -237,7 +238,7 @@
             </div>
 
         </section>
-        <section class="bg-white rounded-2xl row-span-3 col-span-1  p-2.5 shadow-lg">
+        <section class="bg-white rounded-2xl row-span-3 col-span-1  p-2.5 shadow-lg h-auto">
             <div class="history flex justify-between items-center border-b border-gray-200 pb-2.5 mb-2.5">
                 <div><i class="fa-regular fa-clock"></i> Call History</div>
                 <button id="clear-btn" class="px-4 py-2 rounded-full text-white font-semibold  bg-[#00A63E]">Clear</button>
