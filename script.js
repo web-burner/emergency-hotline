@@ -125,6 +125,9 @@ getElementById("clear-btn").addEventListener("click", () => {
   console.log("clear button clicked");
   historyData.length = 0;
   getElementById("data-container").innerHTML = "";
+  setInnerValue('heart-count',0)
+  setInnerValue('coins',100)
+  setInnerValue('copy-balance',0)
 });
 
 // copy btn
